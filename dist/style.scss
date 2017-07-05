@@ -1,0 +1,30 @@
+.parentbox {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        width: 20%;
+        //height: 200px;
+        padding: 10px;
+        margin: 10px;
+        color: #fff;
+        background-color: #3f3f3f;
+        border: 1px solid rgba(255, 255, 255, .45);
+
+        &:nth-child(2) {
+            align-self: flex-start;
+            background-color: #0760D7;
+        }
+        &:first-child {
+            align-self: flex-end;
+            background-color: #F41C37;
+        }
+        &:nth-child(3) {
+            align-self: stretch;
+            background-color: #07AEF4;
+        }
+        &:last-child {
+            background-color: #00D561;
+        }
+    }
+}
